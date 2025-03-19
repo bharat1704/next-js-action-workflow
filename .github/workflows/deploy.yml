@@ -32,11 +32,8 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            # Navigate to your app directory on EC2
-            cd next-js-action-workflow
+            git clone https://github.com/bharat1704/next-js-action-workflow.git
 
-            # Pull the latest code
-            git pull origin main
 
           #   # Install only production dependencies
           #   npm install --production
