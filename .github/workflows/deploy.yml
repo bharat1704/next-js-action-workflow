@@ -32,11 +32,7 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            cd next-js-action-workflow
-            npm install
-            npm run build
-            npm run start
-
+            ls 
 
           #   # Install only production dependencies
           #   npm install --production
