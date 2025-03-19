@@ -31,13 +31,12 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
-          script: whoami
-          # script: |
-          #   # Navigate to your app directory on EC2
-          #   cd /path/to/your/app # Replace with your actual path
+          script: |
+            # Navigate to your app directory on EC2
+            cd next-js-action-workflow
 
-          #   # Pull the latest code
-          #   git pull origin main
+            # Pull the latest code
+            git pull origin main
 
           #   # Install only production dependencies
           #   npm install --production
